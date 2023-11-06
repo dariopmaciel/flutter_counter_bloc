@@ -4,7 +4,7 @@ abstract class CounterState extends Equatable {
   //terá um contador, ou seja um inteiro
   //o estado BASE, recebe um contador
   final int counter;
-  CounterState(this.counter);
+  const CounterState(this.counter);
 
   // @override
   // bool operator ==(Object other) {
@@ -24,9 +24,9 @@ abstract class CounterState extends Equatable {
 //uma nopva classe que será o ESTADO inicial ao abrir a tela
 class CounterStateInitial extends CounterState {
   // CounterStateInitial(int counter) : super(counter);
-  CounterStateInitial() : super(0);
+  const CounterStateInitial() : super(0);
 }
 
 class CounterStateDate extends CounterState {
-  CounterStateDate(int counter) : super(counter);
+  const CounterStateDate(int counter) : super(counter);
 }
